@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.leandrodesouza.desafio_agendacontatos.entities.Agendacontato;
 import br.com.leandrodesouza.desafio_agendacontatos.services.Agendacontatoservice;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/agendacontato")
@@ -28,7 +29,7 @@ public class Agendacontatocontroller {
     }
 	
 	@PostMapping
-	List<Agendacontato> create(@RequestBody Agendacontato agendacontato) {
+	List<Agendacontato> create(@RequestBody @Valid Agendacontato agendacontato) {
 	return agendacontatoservice.create(agendacontato);
 	}
 
