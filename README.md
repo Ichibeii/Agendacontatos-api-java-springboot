@@ -9,6 +9,7 @@ Este projeto é uma **API RESTful** desenvolvida para o gerenciamento de contato
 - **JPA (Java Persistence API)**: Para interação com banco de dados.
 - **H2 Database**: Banco de dados em memória para armazenamento dos dados (pode ser alterado conforme necessidade).
 - **Maven**: Gerenciador de dependências e construção do projeto.
+- **Swagger**: Gerenciador de documentação springboot
 
 ## Funcionalidades
 
@@ -89,6 +90,11 @@ Para deletar algum contato com o ID.
 #### Request:
 ```http
 DELETE /agendacontato/1
+```
+
+### Visualização do Documento Swagger
+
+![Visualização Swagger](https://github.com/user-attachments/assets/65ea8bbf-b9d6-4816-a442-b77993daa15e)
 
 
 
